@@ -1,0 +1,106 @@
+
+/* GENERAL */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+/* TITLU */
+.kaka {
+  background-color: rgb(0, 0, 0);
+  max-width: 100px;
+  border-radius: 10px;
+  color: white;
+}
+
+.kaka h3 {
+  font-size: 19px;
+  margin-left: 30px;
+  color: #ffffff;
+}
+
+.kaka i {
+  display: flex;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 2px;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* LISTA PRODUSE */
+#cart-items {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#cart-items div {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+#cart-items h4 {
+  margin: 0;
+}
+
+#cart-items p {
+  margin: 5px 0;
+}
+
+/* BUTON ȘTERGE */
+#cart-items button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#cart-items button:hover {
+  background: darkred;
+}
+
+/* SUMMARY (dreapta ca eMAG) */
+.summary {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.summary p {
+  margin: 10px 0;
+}
+
+.summary h3 {
+  margin-top: 15px;
+}
+
+/* BUTON CONTINUĂ */
+.summary button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6000;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.summary button:hover {
+  background: #e05500;
+}
+
+
+@media (max-width:768px) {
+  body {
+    height: 400vh;
+  }
+}

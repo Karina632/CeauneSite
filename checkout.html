@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ceaune Aluminiu</title>
+    <link rel="icon" href="image/cauldron.png" type="image/x-icon">
+
+      <link rel="stylesheet" href="css/checkout.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="kaka">
+  <a href="cart.html"><h3><i class="fa-solid fa-arrow-left" style="color: rgb(255, 255, 255);"></i>Înapoi</h3></a>
+  </div>
+
+    <h1>Finalizare comandă</h1>
+
+<h3>Modalitate livrare</h3>
+<p>Livrare prin curier</p>
+
+<h3>Date facturare</h3>
+
+<form id="order-form">
+  <input type="text" id="name" placeholder="Nume" required>
+  <input type="text" id="phone" placeholder="Telefon" required>
+  <input type="text" id="county" placeholder="Județ" required>
+  <input type="text" id="city" placeholder="Localitate" required>
+  <input type="text" id="address" placeholder="Adresă" required>
+
+  <h3>Plată</h3>
+  <p class="two">Ramburs la curier</p>
+
+  <h3>Sumar comandă</h3>
+  <p class="two">Produse: <span id="products-total"></span> RON</p>
+  <p class="two">Livrare: 20 RON</p>
+  <h3>Total: <span id="total"></span> RON</h3>
+
+  <button type="submit">Trimite comanda</button>
+<div id="order-message" class="order-message">Comanda a fost trimisă cu succes!</div>
+</form>
+
+
+<!-- CARD CONFIRMARE COMANDA -->
+<div id="confirmation-card" style="display:none;">
+  <div style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+  ">
+    <div style="
+        background: white;
+        padding: 30px 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    ">
+      <h2>✅ Comanda a fost trimisă!</h2>
+      <p>Produsele au fost primite și vor fi procesate.</p>
+      <p>Comanda va ajunge în 1-5 zile lucrătoare!❤️</p>
+      <button id="confirmation-ok-btn" style="
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+      ">OK</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Biblioteca EmailJS -->
+<!-- EmailJS SDK v4 direct din CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // Inițializează EmailJS cu Public Key-ul tău
+  emailjs.init("iGaexf7JQ-GuJDBOC"); // pune aici public key-ul tău
+</script>
+
+<!-- Scriptul tău -->
+<script src="script.js"></script>
+
+<!-- Încarcă funcția loadCheckout -->
+<script>
+  loadCheckout();
+</script>
+
+</body>
+</html>

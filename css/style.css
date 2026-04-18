@@ -1,0 +1,439 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 50px;
+  background: white;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar span {
+  color: rgb(212, 41, 41);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: rgb(190, 25, 25);
+}
+
+.cos-telefon {
+  display: flex;
+  gap: 40px;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px 60px 60px;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+
+  height: 90vh;
+}
+
+
+.hero-text {
+  max-width: 500px;
+  display: block;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+}
+
+.hero-text span {
+  color: rgb(193, 43, 43);
+}
+
+.hero-text p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.hero-text a {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+}
+
+.first-btn {
+  background: rgb(136, 51, 51);
+  color: white;
+}
+
+.second-btn {
+  border: 2px solid rgb(136, 51, 51);
+  color: rgb(136, 51, 51);
+}
+
+.first-btn:hover {
+    background-color: rgb(114, 31, 31);
+}
+
+.second-btn:hover {
+    color: white;
+    background-color: rgb(114, 31, 31);
+}
+
+.hero img {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* PRODUSE */
+.product {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.product-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.product-text span {
+  display: block;
+  margin-top: 5px;
+}
+
+.two {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #dbdbdb;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.137);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 15px;
+}
+
+.card-text h3 {
+  color: rgb(210, 48, 48);
+  margin-top: 10px;
+}
+
+.vezi {
+  margin-top: 50px;
+   transition: 0.3s;
+}
+
+.vezi a {
+  background: rgb(136, 51, 51);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.vezi:hover {
+    transform: scale(1.1);
+}
+
+/* DESPRE */
+.despre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+}
+
+.despre-text {
+  max-width: 500px;
+}
+
+.despre-text h1 {
+  font-size: 40px;
+}
+
+.despre-text span {
+  color: rgb(136, 51, 51);
+}
+
+.despre-text p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.imagine img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* VISIT */
+.visit-text h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+.visit-text span {
+    color: rgb(111, 17, 17);
+}
+
+.visit {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.visit img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+
+
+.visit-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.visit-left {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.info img {
+  width: 50px;
+  height: 50px;
+}
+
+.info a,
+.info p {
+  text-decoration: none;
+  color: black;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(136, 51, 51);
+  color: white;
+  padding: 50px 20px;
+
+  margin-top: 70px;
+}
+
+.last-logo {
+    text-align: center;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.site-footer h3 {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.second-linkuri img {
+    width: 30px;
+    height: 30px;
+}
+.second-linkuri a {
+    font-size: 15px;
+}
+.third-linkuri img {
+    width: 40px;
+    height: 40px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.href-four {
+    margin-top: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.736);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+   .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+
+        background: rgb(115, 24, 24);
+        flex-direction: column;
+        
+        padding: 2rem;
+        transition: 0.5s;
+
+        align-items: center;
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .nav-links a {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+
+    .navbar h2,span {
+        font-size: 20px;
+    }
+
+    .cos-telefon {
+        gap: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        margin-left: -20px;
+    }
+
+/* ===================================== */
+.hero {
+    flex-direction: column;
+}
+    .hero img {
+        display: none;
+    }
+/* =========================================== */
+.product-text span {
+    font-size: 16px;
+}
+
+/* ======================================== */
+.despre-text span {
+    font-size: 37px;
+}
+  .despre {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+/* ================================================= */
+
+.map {
+    display: none;
+}
+
+.visit-text span{
+    font-size: 35px;
+}
+
+  .site-footer {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+}
