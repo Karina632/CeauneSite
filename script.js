@@ -249,7 +249,7 @@ function displayCartPage() {
   });
 
   document.getElementById("products-total").innerText = total;
-  document.getElementById("total").innerText = total + 20;
+  document.getElementById("total").innerText = total + 30;
 }
 
 // REMOVE
