@@ -15,6 +15,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -126,6 +127,16 @@ body {
   border-radius: 10px;
 }
 
+
+.trust-badges {
+  margin-top: 20px;
+}
+
+.trust-badges p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
 /* PRODUSE */
 .product {
   padding: 80px 20px;
@@ -233,6 +244,28 @@ body {
 .imagine img {
   width: 450px;
   max-width: 100%;
+  border-radius: 10px;
+}
+
+
+
+.urgency {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.reviews {
+  padding: 60px;
+  text-align: center;
+}
+
+.review {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 400px;
   border-radius: 10px;
 }
 
@@ -435,5 +468,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
+
+
+  
 
 }

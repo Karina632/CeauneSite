@@ -250,6 +250,21 @@ function displayCartPage() {
 
   document.getElementById("products-total").innerText = total;
   document.getElementById("total").innerText = total + 30;
+
+  showCartNotification();
+}
+
+const continueBtn = document.getElementById("continue-btn");
+
+if (continueBtn) {
+  continueBtn.addEventListener("click", () => {
+    continueBtn.innerText = "Se încarcă...";
+    continueBtn.disabled = true;
+
+    setTimeout(() => {
+      window.location.href = "checkout.html";
+    }, 800);
+  });
 }
 
 // REMOVE
@@ -264,7 +279,7 @@ function loadCheckout() {
   let total = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
 
   document.getElementById("products-total").innerText = total;
-  document.getElementById("total").innerText = total + 20;
+  document.getElementById("total").innerText = total + 30;
 }
 
 // ================= TRIMITERE =================
@@ -273,7 +288,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!form) return;
 
   form.addEventListener("submit", e => {
-    e.preventDefault();
+  e.preventDefault();
+
+  const btn = document.getElementById("order-btn");
+
+  btn.innerHTML = "Se trimite <span class='loading-spinner'></span>";
+  btn.disabled = true;
 
     let data = {
       name: document.getElementById("name").value,
@@ -305,6 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
 
 
 function updateCartBadge() {
