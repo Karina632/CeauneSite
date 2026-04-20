@@ -127,14 +127,8 @@ body {
   border-radius: 10px;
 }
 
-
 .trust-badges {
   margin-top: 20px;
-}
-
-.trust-badges p {
-  font-size: 14px;
-  margin: 5px 0;
 }
 
 /* PRODUSE */
@@ -249,11 +243,6 @@ body {
 
 
 
-.urgency {
-  color: red;
-  font-weight: bold;
-  margin-top: 10px;
-}
 
 
 .reviews {
@@ -423,7 +412,7 @@ footer {
     }
 
     .cos-telefon {
-        gap: 20px;
+        gap: 15px;
     }
 
     .hamburger {

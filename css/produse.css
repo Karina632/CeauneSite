@@ -119,13 +119,7 @@ body {
     margin-top: -12px;
 }
 
-.price {
-    display: inline;
-    color: rgb(230, 41, 41);
-    font-weight: bold;
-    font-size: 28px;
 
-}
 
 .product-card:hover {
     transform: translateY(-10px);
@@ -191,10 +185,18 @@ body {
   margin-top: 90px;
 }
 
-/* .modal-content img {
-  width: 100%;
-  border-radius: 10px;
-} */
+
+.sizes {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.about {
+  margin-top: 5px;
+  color: #555;
+}
+
 
 .close {
   position: absolute;
@@ -214,7 +216,7 @@ body {
 }
 
 .modal-img {
-  width: 70%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -240,280 +242,6 @@ body {
   right: 1px;
 }
 
-
-.quantity {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.quantity input {
-  width: 50px;
-  text-align: center;
-  padding: 5px;
-}
-
-.quantity button {
-  width: 35px;
-  height: 35px;
-  border: none;
-  background: #edffe6;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* .image-slider .second {
-    display: flex;
-    position: absolute;
-    margin-top: -170px;
-    margin-left: 225px;
-}
-
-.image-slider .first {
-    display: flex;
-    position: absolute;
-    margin-top: 52px;
-    margin-left: -60px;
-}
-
-.quantity {
-    display:flex;
-    position: absolute;
-    margin-left: -40px;
-    margin-top: 15px;
-
-}
-
-.quantity .plus {
-    display: flex;
-    position: absolute;
-    margin-left: 145px;
-    margin-top: -2px;
-
-    border: none;
-    border-radius: 50px;
-    padding: 1px 1px;
-
-    width: 25px;
-    height: 25px;
-}
-
-.quantity .minus {
-    display: flex;
-    position: absolute;
-    margin-left: -32px;
-    margin-top: -3px;
-
-    border: none;
-    border-radius: 50px;
-    padding: 1px 1px;
-
-    width: 25px;
-    height: 25px;
-}
-
-.close {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 25px;
-    cursor: pointer;
-} */
-
-
-/* LAST PAGE 
-footer {
-    background-color: rgb(136, 51, 51);
-    padding-top: 1px;
-    padding-bottom: 20px;
-    position: relative;
-
-    margin-bottom: -100px ;
-}
-
-.site-footer {
-    color: white;
-}
-
-.last-logo {
-    display: flex;
-
-    margin-top: 180px;
-}
-
-.last-logo h2 {
-    position: absolute;
-
-    margin-top: -90px;
-    margin-left: 155px;
-}
-
-.last-logo img {
-    position: absolute;
-
-    width: 50px;
-    height: 50px;
-
-    margin-left: 177px;
-    margin-top: 20px;
-}
-
-.last-logo p {
-    position: absolute;
-
-    margin-top: -50px;
-    margin-left: 15px;
-    text-align: center;
-}
-
-
-.utile h3 {
-
-    margin-top: -100px;
-    margin-left: 450px;
-}
-
-.linkuri a {
-    display: block;
-    flex: 1;
-
-    text-decoration: none;
-    color: white;
-
-    margin-left: 450px;
-    margin-top: 10px;
-}
-
-.second-utile h3 {
-    margin-top: -135px;
-    margin-left: 650px;
-}
-
-.second-linkuri img{
-    display: block;
-
-    width: 23px;
-    height: 23px;
-
-    margin-left: 650px;
-}
-
-.second-location {
-    margin-top: 18px;
-}
-
-.second-phone {
-    margin-top: 25px;
-}
-
-.second-email {
-    margin-top: 20px;
-}
-
-.second-location-text {
-    position: absolute;
-
-    margin-left: 680px;
-    margin-top: -21px;
-
-    text-decoration: none;
-    color: white;
-}
-
-.second-phone-text {
-    position: absolute;
-
-    margin-left: 680px;
-    margin-top: -18px;
-
-    text-decoration: none;
-    color: white;
-}
-
-.second-phone-text-two {
-    position: absolute;
-
-    margin-left: 785px;
-    margin-top: -18px;
-
-    text-decoration: none;
-    color: white;
-}
-
-.third-utile h3 {
-    margin-left: 1116px;
-    margin-top: -110px
-}
-
-.third-linkuri {
-    display: flex;
-}
-
-.third-linkuri img {
-    width: 40px;
-    height: 40px;
-}
-
-.tiktok {
-    position: absolute;
-
-    margin-left: 72em;
-    margin-top: 23px;
-}
-
-.href-four {
-    margin: auto;
-    width: 1260px;
-    margin-top: 224px;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-
-.copy {
-    margin-left: 551px;
-    margin-top: 20px;
-}
-*/
-
-.variants {
-  display: flex;
-  gap: 10px;
-}
-
-.variants button {
-  padding: 8px 12px;
-  border: 1px solid #e2e2e2;
-  background: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
-.variants button.active {
-  background: rgb(82, 197, 50);
-  color: white;
-}
-
-
-
-
-.variant-btn {
-  padding: 8px 16px;
-  margin: 4px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: #f0f0f0;
-  cursor: pointer;
-}
-
-
-
-.variant-btn:hover { 
-    opacity: 0.8; 
-}
-
-.variant-btn.active { 
-    border-color: #2aa836; 
-}
 
 
 .menu-toggle {
@@ -668,28 +396,7 @@ footer {
     width: 60px;
   }
 
-  /* 🔥 CANTITATE */
-  .quantity {
-    gap: 10px;
-  }
-
-  .quantity button {
-    width:30px;
-    height:30px;
-  }
-
-  .quantity img {
-    width:30px;
-    height:30px;
-  }
-
-  .quantity input {
-    width: 130px;
-    height: 20px;
-    font-size: 14px;
-    text-align: center;
-  }
-
+  
   /* 🔥 BUTTON */
   .btn {
     width: 100%;
@@ -697,28 +404,7 @@ footer {
     font-size: 16px;
   }
 
-  /* 🔥 MODAL */
-  /* .modal {
-    display: none;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    border-radius: 15px;
-    background-color: white;
-  }
-
-  .modal-content {
-    max-width: none;
-    border-radius: 15px;
-    background-color: rgb(255, 239, 239);
-
-    transition: all 0.3s ease;
-    font-size: 14px;
-    gap: 5px;
-    
-  }
- */
-
+  
   .modal {
     align-items: flex-end;
   }
